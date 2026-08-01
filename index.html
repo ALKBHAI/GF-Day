@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Girlfriend's Day, Priyanshi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="bgAudio" src="Bairan.mp3" preload="auto" loop playsinline></audio>
+    <button id="audioToggle" class="audio-toggle" type="button" aria-pressed="false" aria-label="Pause music">⏯</button>
+
+    <div class="loader" id="loader">
+      <div class="loader__card heart-stage">
+        <svg class="heart-svg" viewBox="0 0 512 512" role="img" aria-label="Glowing heart drawing animation">
+          <path id="heartPathGlow" class="heart-path-glow" />
+          <path id="heartPathSpark" class="heart-path-spark" />
+          <path id="heartPath" class="heart-path" />
+        </svg>
+        <div class="heart-text">I love you</div>
+        <div class="loader-label"><span>💗</span> Loading the Love <span>💗</span></div>
+      </div>
+    </div>
+
+    <div class="photo-hangers" aria-hidden="true">
+      <div class="photo-arc"></div>
+      <div class="photo-card photo-card--left">
+        <img src="Baby1.jpeg" alt="Memory photo 1" />
+      </div>
+      <div class="photo-card photo-card--right">
+        <img src="Baby2.jpeg" alt="Memory photo 2" />
+      </div>
+    </div>
+    <div class="love-bg" aria-hidden="true">
+      <span>❤️</span>
+      <span>💗</span>
+      <span>💘</span>
+      <span>🌹</span>
+      <span>💕</span>
+      <span>💞</span>
+      <span>💖</span>
+      <span>🥀</span>
+      <span>💓</span>
+      <span>💝</span>
+    </div>
+    <div class="message-overlay" id="messageOverlay" aria-live="polite"></div>
+    <main class="main-content">
+      <section class="glass-card" aria-label="Message for Priyanshi">
+        <h1 class="hero-title">Happy Girlfriend's Day, Priyanshi! ❤️</h1>
+        <p class="hero-subtitle">To the girl who stole my heart and makes every single day brighter...</p>
+        <div class="hero-badge">A shimmering love story written just for you.</div>
+
+        <div class="message-card">
+          <p>
+            Priyanshi, before you came into my life, I didn't know it was possible to love someone this much. You are my peace, my biggest inspiration, and my favorite adventure. Today is all about celebrating you and the beautiful magic you bring to my world. Thank you for being the most amazing girlfriend.
+          </p>
+        </div>
+
+        <div class="mini-cards">
+          <article class="mini-card">
+            <div class="mini-icon">✨</div>
+            <h3>My Light</h3>
+            <p>Every moment with you shines brighter than a thousand stars.</p>
+          </article>
+          <article class="mini-card">
+            <div class="mini-icon">🌹</div>
+            <h3>My Promise</h3>
+            <p>I will always choose you, today and every day after.</p>
+          </article>
+          <article class="mini-card">
+            <div class="mini-icon">🌙</div>
+            <h3>My Calm</h3>
+            <p>Your love is the peaceful night that holds every dream.</p>
+          </article>
+        </div>
+
+        <div class="love-meter" aria-label="Love meter">
+          <div class="meter-top">
+            <span>Love Meter</span>
+            <span id="meterScore">0%</span>
+          </div>
+          <div class="meter-track">
+            <div class="meter-fill" id="meterFill"></div>
+          </div>
+          <div class="meter-note" id="meterNote">Click the love button to fill this with your smiles.</div>
+        </div>
+
+        <div class="button-wrap">
+          <button class="love-button" id="loveButton" type="button">Click to feel the love</button>
+        </div>
+
+        <div class="signature">
+          Forever and always yours,<br />
+          Alok ✨
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
